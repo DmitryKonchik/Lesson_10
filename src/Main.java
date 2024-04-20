@@ -15,5 +15,23 @@ public class Main {
         System.out.println(user1);
         System.out.println(user2);
         System.out.println(user3);
+
+
+        // HardTask
+
+        // Не понял в задании по поводу того зачем передавать ID
+
+        user1.setFriend(user2);
+        SystemUser user4 = user1.clone();
+        SystemUser user5 = user1.deepClone();
+        user4.setUserName("Vova");    //  Изменяем клонированный юзер
+        user5.setUserName("Bob");     //  Изменяем глубоко клонированный юзер в первом порядке
+        user5.setFriend(user4);       //  Изменяем глубоко клонированный юзер во втором порядке
+        System.out.println(user1);    //  Печтаем юзер от которого клонировали
+        System.out.println(user4);    //  Печтаем юзер после простого клонирования
+        System.out.println(user5);    //  Печтаем юзер после глубокого клонирования
+
+
+
     }
 }
